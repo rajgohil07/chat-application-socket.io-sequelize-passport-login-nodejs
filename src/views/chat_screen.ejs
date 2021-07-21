@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat screen</title>
+
+    <!-- bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/chat.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- bootstrap.min.js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- socket.io.js -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- custom js -->
+    <script src="clientjs/main.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 bg-primary">
+
+                <!-- friend_name -->
+                <div class="friend_name mt-5">
+                    <h3 id="active_user_name_display">
+                        Active users
+                    </h3>
+
+                    <!-- button to send msg as a brodcast -->
+                    <div id="active_user_name_display_inside">
+                        <h3>
+                            <a data-toggle="modal" id="sendMsgModalInit" data-target="#sendMsgModal"
+                                data-name="All members">Send to all Members</a>
+                        </h3>
+                    </div>
+
+                    <!-- available user will display here -->
+                    <div id="friend_name_wrapper"></div>
+                </div>
+
+            </div>
+            <div class="col-md-9">
+
+                <!-- chat_section -->
+                <section class="chat_section">
+                    <div class="brand">
+                        <div class="blue-font-28">
+
+                            <!-- brand -->
+                            <input value="<%=name%>" id="logger_name" type="hidden">
+                            <input value="<%=id%>" id="logger_id" type="hidden">
+                            Chat app (<%=name%>)
+                        </div>
+
+                        <!-- LOGOUT button -->
+                        <div id="logout_button" class="text-right blue-font-28">LOGOUT</div>
+
+                    </div>
+                    <div class="message_area"></div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="sendMsgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+                <!-- modal-header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Send message to <span>username</span>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <!-- textarea -->
+                <div class="modal-body">
+                    <textarea id="textarea" cols="30" rows="1" placeholder="Write a message..." autofocus></textarea>
+
+                    <!-- modal_soketid -->
+                    <input id="modal_soketid" type="hidden">
+
+                    <!-- modal_user_db_id -->
+                    <input id="user_db_id" type="hidden">
+
+                    <!--modal receiever name -->
+                    <input id="receiever_name_getter" type="hidden">
+
+                </div>
+
+                <!-- modal-footer -->
+                <div class="modal-footer">
+                    <button type="submit" id="send_msg_modal" class="btn btn-primary blue-button-hover-white">Send
+                        Message</button>
+                    <button type="button" class="btn btn-primary red-button-hover-white"
+                        data-dismiss="modal">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="greet_msg">
+        welcome! <%=name%>
+    </div>
+
+</body>
+
+</html>

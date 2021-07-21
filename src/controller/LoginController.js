@@ -1,0 +1,1 @@
+exports.LoginRedirect = (req, res) => res.render('index', { wrong_psd: req.flash('wrong_psd'), wrong_email: req.flash('wrong_email') });
