@@ -41,7 +41,7 @@ io.on('connection', (socket) => {
         const receiever_name = await common.getNameFromId(sender_db_id);
 
         //console to check wheather messsage is receieved or not
-        console.log("on message event name:" + receiever_name + " sended msg: " + msg);
+        console.log("on message event name:" + receiever_name.name + " sended msg: " + msg);
 
         //for 2=private chat 1=brodcast chat
         if (msg_type === 2) {
@@ -89,10 +89,6 @@ io.on('connection', (socket) => {
     });
 
 });
-
-//to create table sync
-const db = require("./src/models");
-db.sequelize.sync();
 
 //call the router
 require('./src/routers/route')(app);
