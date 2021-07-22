@@ -10,7 +10,7 @@ Front_end=><b>src/view</b><br>
 
 <b>Creation of chat application applying socket.io including private chat and broadcast which is administered by passport login moreover Sequelize ORM along with migration integration beside MySql database with proper MVC structure in nodejs.<b><br><br>
 
-<b>More info:</b>https://socket.io/get-started/private-messaging-part-1/<br>
+More info:<b>https://socket.io/get-started/private-messaging-part-1/</b><br>
 
 # key features
 
@@ -36,7 +36,7 @@ Front_end=><b>src/view</b><br>
 <b>sequelize</b> @6.6.2<br>
 <b>socket.io</b> @4.1.2<br>
 
-# Installing the Sequelize CLI <br>
+# Installing the Sequelize CLI
 
 To install the Sequelize CLI:<br>
 <b>npm install sequelize-cli</b>
@@ -59,7 +59,7 @@ type the following command to run to migration <br>
 # To Undo Migrations
 
 You can revert to old state by just running a command.<br>
-<b>npx sequelize-cli db:migrate:undo:all <b>
+<b>npx sequelize-cli db:migrate:undo:all </b>
 
 # Creating the first Seed
 
@@ -82,16 +82,16 @@ Open the directory and install all the required modules by typing the following 
 <b>npm i</b><br><br>
 
 to create migration with database also insert data as seeds type following command<br>
-<b>npm run migrate</b><br>
+<b>npm run migrate</b><br><br>
 
 After module installation just simply typewrite the following code to start the node server<br>
 <b>npm start</b><br><br>
 
 to empty the all table data type the following command<br>
-<b>npm run clear_data</b><br>
+<b>npm run clear_data</b><br><br>
 
 to remove all tables type the following command<br>
-<b>npm run clear_table</b><br>
+<b>npm run clear_table</b><br><br>
 
 # How to run in browser
 

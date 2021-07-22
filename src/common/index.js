@@ -1,5 +1,5 @@
 const bcrypt = require('bcrypt');
-const db = require('../models');
+const db = require('../db/models');
 const { QueryTypes } = require('sequelize');
 const row = db.sequelize;
 const user_chat_data = db.user_chat_data;

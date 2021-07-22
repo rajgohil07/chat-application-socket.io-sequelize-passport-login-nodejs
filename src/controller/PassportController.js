@@ -1,6 +1,6 @@
 const passport = require('passport');
 const passport_local = require('passport-local').Strategy;
-const user_data = require('../models').user_data;
+const user_data = require('../db/models').user_data;
 const common = require("../common");
 
 var local_passport_login = () => {
