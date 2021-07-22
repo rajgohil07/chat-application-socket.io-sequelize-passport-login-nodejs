@@ -12,8 +12,8 @@ Front_end=><b>src/view</b><br>
 
 # More info:
 
-link:socket.io:<b>https://socket.io/get-started/private-messaging-part-1/</b><br>
-link:migrations:<b>https://sequelize.org/master/manual/migrations.html</b>
+link of socket.io : <b>https://socket.io/get-started/private-messaging-part-1/</b><br>
+link of migrations : <b>https://sequelize.org/master/manual/migrations.html</b>
 
 # key features
 
