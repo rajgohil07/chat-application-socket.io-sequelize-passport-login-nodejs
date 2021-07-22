@@ -10,7 +10,10 @@ Front_end=><b>src/view</b><br>
 
 <b>Creation of chat application applying socket.io including private chat and broadcast which is administered by passport login moreover Sequelize ORM along with migration integration beside MySql database with proper MVC structure in nodejs.<b><br><br>
 
-More info:<b>https://socket.io/get-started/private-messaging-part-1/</b><br>
+# More info:
+
+link:socket.io:<b>https://socket.io/get-started/private-messaging-part-1/</b><br>
+link:migrations:<b>https://sequelize.org/master/manual/migrations.html</b>
 
 # key features
 

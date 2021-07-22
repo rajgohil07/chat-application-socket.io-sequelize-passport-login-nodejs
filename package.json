@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server",
     "migrate": "npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-    "clear_data":"npx sequelize-cli db:seed:undo:all",
-    "clear_table":"npx sequelize-cli db:migrate:undo:all"
+    "clear_data": "npx sequelize-cli db:seed:undo:all",
+    "clear_table": "npx sequelize-cli db:migrate:undo:all"
   },
   "author": "",
   "license": "ISC",
